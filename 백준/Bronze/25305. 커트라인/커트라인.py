@@ -1,4 +1,3 @@
 N , k = map(int,input().split())
-A = list(map(int,input().split()))
-A.sort()
-print(A[-k])
+A = map(int,input().split())
+print(sorted(A)[-k])
