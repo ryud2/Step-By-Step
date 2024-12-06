@@ -1,11 +1,10 @@
 import sys
 N = int(input())
-L = []
+L = {}
 for i in range(N):
-    A , B = map(str,input().split())
+    A , B = input().split()
     if B == "enter":
-        L.append(A)
+        L[A] = 0
     elif B == "leave":
-        L.remove(A)
-L.sort(reverse=True)
-print(*L, sep = "\n")
+        del L[A]
+print('\n'.join(sorted(L.keys(), reverse=True)))
