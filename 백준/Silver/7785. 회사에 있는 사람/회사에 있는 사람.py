@@ -1,8 +1,8 @@
 import sys
-N = int(input())
+N = int(sys.stdin.readline())
 L = {}
 for i in range(N):
-    A , B = input().split()
+    A , B = sys.stdin.readline().split()
     if B == "enter":
         L[A] = 0
     elif B == "leave":
