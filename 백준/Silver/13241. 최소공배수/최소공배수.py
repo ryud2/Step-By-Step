@@ -8,3 +8,8 @@ while A%B != 0 :
         A , B = B , A
     A , B = B , A%B
 print(a*b//B)
+
+#import math
+# import sys
+# A , B = map(int,sys.stdin.readline().split())
+# print(math.lcm(A,B))
