@@ -6,8 +6,6 @@ def Prime(n):
             return False
     return True 
 
-L ={}
-
 A , B = map(int,sys.stdin.readline().split())
 if A == 1 :
     A = 2 
